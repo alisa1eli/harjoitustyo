@@ -9,6 +9,10 @@ The features availible for the user:
 * sign up
 * sign in
 * file (notes, ... ) managment 
+** create a note, a to-do list
+** change a note, a to-do list
+** delete a note, a to-do list
+
 The admin has all features (besides sign up) the user does. Also, he or she can access the statistic and other's user files. There is always only one admin. The admin cannot sign up.    
 
 The application is a desktop application. It can be opened on OS X. The data is stored  on the local hard disk. 
