@@ -1,11 +1,10 @@
-# Työaikakirjanpito
+# Työaikakirjanpito 
 
-| päivä | aika | mitä tein |
-| :----: | :--- | :---------|
-| 26.3.2018 | 2h | Määrittelydokumentin kirjoittaminen |
-| 6.4.2018 | 2h | Maven projektin luominen ja ohjelman luokkien / rakenteen suunnittelu |
-| 7.4.2018 | 5h | Otetaan tietokanta käyttöön |
-| 9.4.2018 | 2h | Aloitetaan kehittää käyttöliitymää |
-| 10.4.2018 | 1.5h | Dokumentoinnin siistiminen |
-|            |      |            |
-| yht | 12.5h | |
+| päivä | aika  | mitä tein |
+| :----:|:------| :---------|
+| 26.3. | 2h    | Määrittelydokumentin kirjoittaminen |
+| 6.4.  | 2h    | Maven projektin luominen ja ohjelman luokkien / rakenteen suunnittelu |
+| 7.4.  | 5h    | Otetaan tietokanta käyttöön |
+| 9.4.  | 2h    | Aloitetaan kehittää käyttöliitymää |
+| 10.4. | 1.5h  | Dokumentoinnin siistiminen |
+| yht   | 12.5h | |
