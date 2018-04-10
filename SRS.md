@@ -1,4 +1,4 @@
-#Software requirements specification
+# Software requirements specification
 
 OurNote is a application for taking notes and creatind to-do lists. The notes can be sorted into different folders. And search through the files can be done by hashtags. The pictures can be saved in the application, too.
 
