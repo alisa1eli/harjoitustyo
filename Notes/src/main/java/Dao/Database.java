@@ -40,7 +40,8 @@ public class Database {
         lista.add("CREATE TABLE User (id integer PRIMARY KEY, email varchar(255), "
                 + "password varchar(255), name varchar(255), userType integer);");
         lista.add("CREATE TABLE File(id integer PRIMARY KEY, userId integer, "
-                + "dateCreated datetime, dateLastChanged datetime"
+                + "dateCreated bigint, dateLastChanged bigint, "
+                + "text text, "
                 + "FOREIGN KEY(userId) REFERENCES User(id));");
         
 //        lista.add("INSERT INTO User() VALUES(1,'Manhattan');");

@@ -55,6 +55,41 @@ public class File {
     public Calendar getDateLastChanged() {
         return this.dateLastChanged;
     }
+    public String getDateCreatedYearMonthDay() {
+        return this.getFromCalendarYearMonthDay(this.dateCreated);
+    }
+    public String getDateCreatedHourMinuteSecond() {
+        return this.getFromCalendarHoutMinuteSecond(this.dateCreated);
+    }
+    public String getDateLastChangedYearMonthDay() {
+        return this.getFromCalendarYearMonthDay(this.dateLastChanged);
+    }
+    public String getDateLastChangedHourMinuteSecond() {
+        return this.getFromCalendarHoutMinuteSecond(this.dateLastChanged);
+    }
+    public String getFromCalendarHoutMinuteSecond(Calendar cal) {
+        int hour = cal.get(Calendar.HOUR_OF_DAY);
+        int minute = cal.get(Calendar.MINUTE);
+        int second = cal.get(Calendar.SECOND);
+        
+        return this.numberIsSmallerThanTen(hour)+":"+
+                this.numberIsSmallerThanTen(minute)+":"+
+                this.numberIsSmallerThanTen(second);
+    }
+    public String getFromCalendarYearMonthDay(Calendar cal) {
+        int year = cal.get(Calendar.YEAR);
+        int month = cal.get(Calendar.MONTH);
+        int day = cal.get(Calendar.DATE);
+        return this.numberIsSmallerThanTen(year)+"-"+
+                this.numberIsSmallerThanTen(month)+"-"+
+                this.numberIsSmallerThanTen(day);
+    }
+    public String numberIsSmallerThanTen(int a) {
+        if (a < 10) {
+            return "0"+a;
+        } 
+        return a+"";
+    }
     
     public int getTextLimit() {
         return textLimit;
@@ -63,7 +98,14 @@ public class File {
     public PictureLimit getPictureLimit() {
         return pictureLimit;
     }
-    
+    @Override
+    public String toString() {
+        return this.id + " belongs to " + this.userId + ". Created "+this.getDateCreatedYearMonthDay();
+    }
+
+    public void setDateLastChanged(Calendar a) {
+        this.dateLastChanged = a;
+    }
     
     
 }
